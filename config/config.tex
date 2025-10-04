@@ -71,6 +71,10 @@ runin=false,
 {9pt}%vskip
 {0pt plus 1fil}
 
+\makeatletter
+\providecommand{\sectiontitle}{}% leerer Default
+\makeatother
+
 
 %%%%%% Section headings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -129,6 +133,7 @@ runin=false,
 \usetikzlibrary{calc}
 \usetikzlibrary{shapes.geometric}
 \usetikzlibrary{decorations}
+\usepackage{xparse}
 
 
 %%%%%% Tabellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -196,5 +201,5 @@ runin=false,
 
 
 %%%%%%%%%%%%%%%%%% Citations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[backend=biber,style=authoryear,maxcitenames=2,maxbibnames=99]{biblatex}
+\usepackage[backend=biber,style=authoryear,maxcitenames=3,maxbibnames=99]{biblatex}
 \addbibresource{literatur.bib}

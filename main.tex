@@ -13,10 +13,18 @@
 
 \input{deckblatt}
 
-\tableofcontents
+% Inhaltsverzeichnis
+\clearpage
+\begingroup
+  \renewcommand{\sectiontitle}{Inhaltsverzeichnis}%
+  % \pagestyle{scrheadings}% nur falls du vorher umgestellt hattest
+  \tableofcontents
+\endgroup
 
 \input{content/einleitung}
+\input{content/methodik.tex}
 \input{content/theorie}
+\input{content/anwendung_fallbeispiele.tex}
 \input{content/diskussion}
 \input{content/fazit}
 
